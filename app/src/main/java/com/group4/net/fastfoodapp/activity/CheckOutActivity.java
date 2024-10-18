@@ -190,6 +190,8 @@ public class CheckOutActivity extends FragmentActivity implements OnMapReadyCall
         binding.backCheckoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent();
+                setResult(2, intent);
                 finish();
             }
         });

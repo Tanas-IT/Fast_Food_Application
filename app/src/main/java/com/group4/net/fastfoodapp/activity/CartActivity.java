@@ -113,7 +113,7 @@ public class CartActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1) {
+        if(requestCode == 1 && resultCode != 2) {
             binding.emptyTxt.setVisibility(View.VISIBLE);
             binding.btnEmptyCart.setVisibility(View.VISIBLE);
             binding.scrollViewCart.setVisibility(View.GONE);
